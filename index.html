@@ -264,7 +264,7 @@
     }
     .artist-card { min-width:280px; max-width:320px; scroll-snap-align:start; flex-shrink:0;
       background: #fff; border-radius: 20px;
-      overflow: hidden;
+      overflow: visible;
       text-align: center;
       box-shadow: 0 4px 20px var(--shadow);
       transition: transform 0.3s, box-shadow 0.3s;
@@ -278,6 +278,7 @@
     .artist-card:hover .artist-card-img { transform: scale(1.05); }
     .artist-card-body {
       padding: 1.2rem 1.5rem 1.5rem;
+      min-height: 140px;
     }
     .artist-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px var(--shadow-md); }
     .artist-name { font-size: 1.15rem; font-weight: 800; color: var(--text-dark); margin-bottom: 0.3rem; }
@@ -286,6 +287,7 @@
       font-style: italic; font-size: 0.88rem;
       color: var(--text-mid); line-height: 1.6;
       border-top: 1px solid rgba(193,122,90,0.15); padding-top: 0.8rem; margin-top: 0.8rem;
+      overflow: visible; word-wrap: break-word;
     }
     .slider-nav { display: flex; gap: 0.8rem; margin-top: 1.5rem; justify-content: center; }
     .slider-btn {
@@ -947,7 +949,7 @@
         <h2 class="section-title"><span data-he="מה זה Still Life?" data-en="What is Still Life?">מה זה Still Life?</span></h2>
         <div class="divider"></div>
         <p>
-          <span data-he='<strong>Still Life</strong> (טבע דומם) הוא ז'אנר ציורי שמתמקד בחפצים דוממים – פירות, פרחים, כלי בית, כלי מטבח. זהו הבסיס המושלם ללמידת ציור כי הנושא "לא זז".' data-en='<strong>Still Life</strong> is a painting genre focused on inanimate objects – fruits, flowers, household items, kitchen utensils. It is the perfect foundation for learning to paint because the subject "doesn't move".'><strong>Still Life</strong> (טבע דומם) הוא ז'אנר ציורי שמתמקד בחפצים דוממים – פירות, פרחים, כלי בית, כלי מטבח. זהו הבסיס המושלם ללמידת ציור כי הנושא "לא זז".</span>
+          <span data-he-html='<strong>Still Life</strong> (טבע דומם) הוא ז&#39;אנר ציורי שמתמקד בחפצים דוממים – פירות, פרחים, כלי בית, כלי מטבח. זהו הבסיס המושלם ללמידת ציור כי הנושא &quot;לא זז&quot;.' data-en-html='<strong>Still Life</strong> is a painting genre focused on inanimate objects – fruits, flowers, household items, kitchen utensils. It is the perfect foundation for learning to paint because the subject &quot;doesn&#39;t move&quot;.'><strong>Still Life</strong> (טבע דומם) הוא ז'אנר ציורי שמתמקד בחפצים דוממים – פירות, פרחים, כלי בית, כלי מטבח. זהו הבסיס המושלם ללמידת ציור כי הנושא "לא זז".</span>
         </p>
         <p>
           <span data-he="מה שמיוחד בטבע דומם הוא שכל חפץ פשוט – כוס קפה, עציץ, לימון – יכול להפוך ליצירת אמנות כשרואים אותו בעיניים של אמן." data-en="What makes still life special is that any simple object – a coffee cup, a plant, a lemon – can become a work of art when seen through an artist's eyes.">מה שמיוחד בטבע דומם הוא שכל חפץ פשוט – כוס קפה, עציץ, לימון – יכול להפוך ליצירת אמנות כשרואים אותו בעיניים של אמן.</span>
@@ -966,7 +968,7 @@
         <div style="display:flex; flex-direction:column; gap:1rem;">
           <div style="background:#fff; border-radius:16px; padding:1.2rem 1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.07); border-right:4px solid var(--terracotta);">
             <div style="font-size:1.5rem; margin-bottom:0.4rem;"><span data-he="🏠 נגיש לכולם" data-en="🏠 Accessible to Everyone">🏠 נגיש לכולם</span></div>
-            <p style="color:var(--text-mid); font-size:0.95rem; line-height:1.6; margin:0;"><span data-he="אין צורך לצאת מהבית או להזמין דוגמן – פשוט השתמש במה שיש על השולחן או האדן." data-en="No need to leave home or hire a model – just use what's on the table or windowsill.">אין צורך לצאת מהבית או להזמין דוגמן – פשוט השתמש במה שיש על השולחן או האדן.</span></p>
+            <p style="color:var(--text-mid); font-size:0.95rem; line-height:1.6; margin:0;"><span data-he="אין צורך לצאת מהבית או להזמין דוגמן – פשוט השתמש במה שיש על השולחן או אדן החלון." data-en="No need to leave home or hire a model – just use what's on the table or windowsill.">אין צורך לצאת מהבית או להזמין דוגמן – פשוט השתמש במה שיש על השולחן או אדן החלון.</span></p>
           </div>
           <div style="background:#fff; border-radius:16px; padding:1.2rem 1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.07); border-right:4px solid var(--gold);">
             <div style="font-size:1.5rem; margin-bottom:0.4rem;"><span data-he="👁️ מלמד תצפית אמיתית" data-en="👁️ Teaches Real Observation">👁️ מלמד תצפית אמיתית</span></div>
@@ -975,7 +977,7 @@
           </div>
           <div style="background:#fff; border-radius:16px; padding:1.2rem 1.5rem; box-shadow:0 2px 12px rgba(0,0,0,0.07); border-right:4px solid var(--sage);">
             <div style="font-size:1.5rem; margin-bottom:0.4rem;"><span data-he="📖 יכול לספר סיפור" data-en="📖 Can Tell a Story">📖 יכול לספר סיפור</span></div>
-            <p style="color:var(--text-mid); font-size:0.95rem; line-height:1.6; margin:0;"><span data-he="כל חפץ נושא זיכרון, רגש ומשמעות. הרכבת הסצנה היא כמו בניית שיר." data-en="Every object carries memory, emotion and meaning. Composing the scene is like writing a poem.">כל חפץ נושא זיכרון, רגש ומשמעות. הרכבת הסצנה היא כמו בניית שיר.</span></p>
+            <p style="color:var(--text-mid); font-size:0.95rem; line-height:1.6; margin:0;"><span data-he="כל חפץ נושא זיכרון, רגש ומשמעות. סידור הסצנה הוא כמו כתיבת שיר." data-en="Every object carries memory, emotion and meaning. Composing the scene is like writing a poem.">כל חפץ נושא זיכרון, רגש ומשמעות. סידור הסצנה הוא כמו כתיבת שיר.</span></p>
           </div>
         </div>
       </div>
@@ -1123,7 +1125,7 @@
           <span class="video-badge"><span data-he="🖊️ קו וכתם" data-en="🖊️ Line & Tone">🖊️ קו וכתם</span></span>
           <h3 class="video-title"><span data-he="רישום פרחים בעט – קו וכתם" data-en="Drawing Flowers with Pen – Line & Tone">רישום פרחים בעט – קו וכתם</span></h3>
           <p class="video-desc">
-            <span data-he='חגית אבידן מדגימה כיצד לרשום פרחים בכוס באמצעות עט – תוך דגש על קו, כתם, התבוננות ושינוי תפיסה. חלק מקורס <strong>"קסם הרישום"</strong>.' data-en='Hagit Avidan demonstrates how to draw flowers in a cup using a pen – emphasizing line, tone, observation and perception shift. Part of the <strong>"Drawing Magic"</strong> course.'>חגית אבידן מדגימה כיצד לרשום פרחים בכוס באמצעות עט – תוך דגש על קו, כתם, התבוננות ושינוי תפיסה. חלק מקורס <strong>"קסם הרישום"</strong>.</span>
+            <span data-he-html='חגית אבידן מדגימה כיצד לרשום פרחים בכוס באמצעות עט – תוך דגש על קו, כתם, התבוננות ושינוי תפיסה. חלק מקורס <strong>&quot;קסם הרישום&quot;</strong>.' data-en-html='Hagit Avidan demonstrates how to draw flowers in a cup using a pen – emphasizing line, tone, observation and perception shift. Part of the <strong>&quot;Drawing Magic&quot;</strong> course.'>חגית אבידן מדגימה כיצד לרשום פרחים בכוס באמצעות עט – תוך דגש על קו, כתם, התבוננות ושינוי תפיסה. חלק מקורס <strong>"קסם הרישום"</strong>.</span>
           </p>
           <ul class="video-tips">
             <li>
@@ -1388,11 +1390,11 @@
       <div class="takeaways-list">
         <div class="takeaway">
           <span class="takeaway-icon">🔍</span>
-          <p><strong><span data-he="ההשראה לא מגיעה" data-en="Inspiration doesn't come">ההשראה לא מגיעה</span></strong> – אתה הולך לקראתה. פתח עיניים וחפש בסביבה הקרובה.</p>
+          <p><strong><span data-he="ההשראה לא מגיעה" data-en="Inspiration doesn't come">ההשראה לא מגיעה</span></strong> – <span data-he="אתה הולך לקראתה. פתח עיניים וחפש בסביבה הקרובה." data-en="you go toward it. Open your eyes and look around you.">אתה הולך לקראתה. פתח עיניים וחפש בסביבה הקרובה.</span></p>
         </div>
         <div class="takeaway">
           <span class="takeaway-icon">🎯</span>
-          <p><strong><span data-he="כל חפץ הוא עולם" data-en="Every object is a world">כל חפץ הוא עולם</span></strong> – ככל שתסתכל יותר, תראה יותר פרטים, צורות ואור.</p>
+          <p><strong><span data-he="כל חפץ הוא עולם" data-en="Every object is a world">כל חפץ הוא עולם</span></strong> – <span data-he="ככל שתסתכל יותר, תראה יותר פרטים, צורות ואור." data-en="the more you look, the more details, shapes and light you will see.">ככל שתסתכל יותר, תראה יותר פרטים, צורות ואור.</span></p>
         </div>
         <div class="takeaway">
           <span class="takeaway-icon">📈</span>
@@ -1448,9 +1450,9 @@
     { emoji: '🫙', he: 'צנצנת זכוכית', en: 'Glass Jar', subHe: 'מטבח', subEn: 'Kitchen',
       tipHe: 'זכוכית = שתי אמפות של אור: אחת בהירה ואחת כהה. ציירי את ההשתקפות בתוך הצנצנת.',
       tipEn: 'Glass = two zones of light: one bright, one dark. Draw the reflection inside the jar.' },
-    { emoji: '💡', he: 'מנורה דולקת', en: 'Lit Lamp', subHe: 'בית', subEn: 'Home',
-      tipHe: 'האור עצמו הוא הנושא! צייר את המרחב הזוהר סביב הנורה לפני שאתה מצייר את המנורה.',
-      tipEn: 'The light itself is the subject! Draw the glowing space around the bulb before the lamp.' },
+    { emoji: '🕯️', he: 'נר דולק', en: 'Light Candle', subHe: 'בית', subEn: 'Home',
+      tipHe: 'האור עצמו הוא הנושא! צייר את המרחב הזוהר סביב הנר לפני שאתה מצייר אותו.',
+      tipEn: 'The light itself is the subject! Draw the glowing space around the candle before painting it.' },
     { emoji: '🥚', he: 'ביצה', en: 'Egg', subHe: 'מטבח', subEn: 'Kitchen',
       tipHe: 'הצורה הפשוטה ביותר, האתגר הגדול ביותר. שים לב לאיזה גוון צהבהב יש בצד המואר.',
       tipEn: 'The simplest shape, the greatest challenge. Notice the yellowish tint on the lit side.' },
@@ -1643,7 +1645,9 @@
   }
   function goQuote(i) {
     quoteIdx = i;
-    quotesTrack.style.transform = `translateX(${i * 100}%)`;
+    const dir = document.documentElement.getAttribute('dir') || 'rtl';
+    const sign = dir === 'ltr' ? -1 : 1;
+    quotesTrack.style.transform = `translateX(${sign * i * 100}%)`;
     document.querySelectorAll('.dot').forEach((d, j) => d.classList.toggle('active', j === i));
   }
   setInterval(() => goQuote((quoteIdx + 1) % totalQuotes), 5000);
